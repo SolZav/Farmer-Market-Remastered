@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sol Llinas">
+    
+    <title>Your Local Market</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="market.js" defer></script>
+</head>
+<body>
+    <a id="skip" href="#main">Skip to main</a>
+
+    <header>
+        <button id="theme-toggle" aria-label="Toggle light/dark mode">
+            <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
+                <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
+            </svg>
+        </button>
+        <h1>Your Local Market</h1>
+        <nav>
+            <ul>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="aboutUs">
+            <h2>About Us</h2>
+            <p>Your Local Market is a non profit organization that works together with Farmer Markets and NAMI (National Alliance on Mental Illness) to build healthier communities. Our goal is to improve the physical and mental health of every American. We will be providing quality and affordable food accessible to everyone, as well as fighting the stigma surrounding mental health by bringing awareness and providing access to mental health professionals.</p>
+            <blockquote>- Healing our communities one neighborhood at a time</blockquote>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <section id="service1" class="currentItem">
+                <h3>Fresh Food</h3>
+                <img src="images/fresh-food.jpeg" alt="farmer holding a crate full of fresh vegetables"> 
+                <!--image credit Jacob Lund - stock.adobe.com-->
+                <p>We work with every Farmer Market in the country to guarantee access to the best quality of food. We provide farmers with a space to provide for the communities as well as grow their business.</p>
+            </section>
+            <section id="service2" class="hiddenItem">
+                <h3>Mental Health</h3>
+                <img src="images/metal-health.jpg" alt="group of volunteers and participants of a NAMI event"> 
+                <!-- image credit NAMI website https://www.nami.org/wp-content/uploads/2026/02/NAMI-walks-Indy-HP-768x512.jpg -->
+                <p>We partner with the National Alliance on Mental Illness to install booths on each of our markets. These booths are run by mental health professionals and filled with resources to support the needs of the community.</p>
+            </section>
+            <section id="service3" class="hiddenItem">
+                <h3>Community Support</h3>
+                <img src="images/community-support.jpeg" alt="sign that indicates the acceptance of SNAP benefits"> 
+                <!-- image credit jetcityimage - stock.adobe.com -->
+                <p>We want to improve the quality of life of every American, which is why every vendor accepts SNAP and EBT benefits.</p>
+            </section>
+            <section id="switcher">
+                <h3 class="sr-only">Learn more about our services</h3>
+			    <button id="btn1">Fresh Food</button>
+			    <button id="btn2">Mental Health</button>
+			    <button id="btn3">Community Support</button>
+            </section>
+        </section>
+
+        <section id="gamePlay">
+            <div>
+                <h2>Join the community</h2>
+                <form>
+				    <label for="numGuess">Enter a Number Between 1 and 10:</label>
+				    <input type="number" name="numGuess" id="numGuess" min="1" max="10" step="1" required>
+				    <input type="submit" name="guessGame" id="guessGame" value="Play the Game!">
+                    <span class="message">Please enter a number from 1 to 10</span>
+			    </form>
+			    <section id="gameDisplay">
+                    <h3>Win a Tote!</h3>
+				    <p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
+				    <p id="gameOutput"></p>
+			    </section>
+            </div>
+        </section>
+
+        <section id="contactUs">
+            <h2>Contact Us</h2>
+            <p>Would you like to help your community? Contact us and we'll tell you how!</p>
+            <p>Fields with <span class="required">*</span> are required</p>
+            <form id="contactForm">
+                <label for="fullName">Full name<span class="required">*</span></label> 
+                <input id="fullName" type="text" name="fullName">
+                <span class="message">Please enter your full name</span>
+
+                <label for="phoneNumber">Phone Number<span class="required">*</span></label>
+                <input id="phoneNumber" type="tel" name="phoneNumber">
+                <span class="message">Please enter your phone number</span>
+
+                <label for="email">Email<span class="required">*</span></label>
+                <input id="email" type="email" name="email">
+                <span class="message">Please enter your email</span>
+
+                <label for="myMessage">Tell us more about you!<span class="required">*</span></label>
+                <textarea id="myMessage" name="myMessage"></textarea>
+                <span class="message">Please tell us more about you!</span>
+
+                <fieldset>
+                    <legend>Preferred Contact Method<span class="required">*</span></legend>
+
+                    <label for="phoneBtn">Phone</label>
+                    <input type="radio" id="phoneBtn" value="phoneBtn" name="prefContact" required checked>
+
+                    <label for="emailBtn">Email</label>
+                    <input type="radio" id="emailBtn" value="emailBtn" name="prefContact" required>
+                </fieldset>
+
+                <input type="submit" name="mySubmit" id="mySubmit">
+
+            </form>
+            <section id="success" class="hide">
+			    <h3>Thank you!</h3>
+			    <p>You have successfully submitted the form. Here is the information you sent us:</p>
+			    <p id="formSub"></p>
+		    </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; For educational purposes</p>
+    </footer>
+</body>
+</html>
