@@ -22,13 +22,25 @@ Work included:
 - Fork repository
 - Continue work on new repository
 
+### Day 3
+Started working on new repository and planning what sections I would be adding to integrate the new functionalities. First addition was an events section with the idea to include a jQuery widget, and API call, and a slideshow.
+Work included:
+- Update HTML header with "events" li
+- Update HTML creating an "events" section with basic content
+- Update HTML "events" section adding subsection "movieNight" (API will be called in there)
+- Applied existing styles to section
+
 ## Debugging Log
 
 ### Problem 1
+My original repository I was working from wasn't letting me fork or clone it
 
 ### What I tried
+I tried cloning from GitHub Desktop, I also tried making a local copy of my original repo and renaming it
 
 ### What fixed it
+I created a new local folder with my new repository name and copied all the existing files into it, then I submitted it to GitHub
 
 ### What I learned
+I learned that you cannot fork your own files in GitHub, and that sometimes it is best to just start over
 
