@@ -214,7 +214,7 @@ button:hover, input[type="submit"]:hover{
 
 /*Product display styles*/
 
-#service1, #service2, #service3{
+#service1, #service2, #service3, #movieNight{
 	border: var(--green) solid 2px;
 	margin: 2rem;
 	padding: 2rem;
