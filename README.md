@@ -31,7 +31,7 @@ Work included:
 - Applied existing styles to section
 
 ### Day 4
-Started by moving around some existing section to improve the exiting page and allow for new functionalities to integrate seamlessly. Continued working on events section, updating html, css and js to create an API call.
+Started by moving around some existing section to improve the exiting page and allow for new functionalities to integrate seamlessly. Continued working on events section, updating html, css and js to create an API call. Updated existing form to check for an exiting full name in local storage and to log the full name to local storage.
 Work included: 
 - Combine About Us and Services sections, update HTML and CSS for those sections
 - Update HTML of movieNight subsection
@@ -39,6 +39,10 @@ Work included:
 - Link jQuery library
 - Added styles to movieNight section
 - Added a Date object to the movieNight object
+- Updated HTML to create empty <p> for a welcome message
+- Updated JS to check for an existing fullName in local storage
+- Update JS to log fullName into local storage if non existed
+- Updated CSS to style welcomeBack paragraph
 
 ## Debugging Log
 
