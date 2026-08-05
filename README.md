@@ -55,6 +55,18 @@ I created a new local folder with my new repository name and copied all the exis
 I learned that you cannot fork your own files in GitHub, and that sometimes it is best to just start over
 
 ### Problem 2
+My console displayed the following error: "Uncaught ReferenceError: $ is not defined"
+
+### What I tried
+I checked my JS for typos, compared my code to class examples. 
+
+### What fixed it
+Adding my <scrip> in my HTML to link a jQuery library
+
+### What I learned
+That sometimes the error is not coming from the file you are working on. You should always check all of your files to make sure you are not missing something somewhere else.
+
+### Problem 3
 My console displayed the following error "Unsafe attempt to load URL file:///C:/Users/sol_l/OneDrive/SOL/GIT%20(Web%20Development)/GIT%20418/Farmer-Market-Remastered/index.html from frame with URL file:///C:/Users/sol_l/OneDrive/SOL/GIT%20(Web%20Development)/GIT%20418/Farmer-Market-Remastered/index.html. 'file:' URLs are treated as unique security origins."
 
 ### What I tried
