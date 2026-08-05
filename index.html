@@ -23,7 +23,6 @@
         <nav>
             <ul>
                 <li><a href="#aboutUs">About Us</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#contactUs">Contact Us</a></li>
             </ul>
@@ -31,39 +30,43 @@
     </header>
 
     <main id="main">
-        <section id="aboutUs">
-            <h2>About Us</h2>
-            <p>Your Local Market is a non profit organization that works together with Farmer Markets and NAMI (National Alliance on Mental Illness) to build healthier communities. Our goal is to improve the physical and mental health of every American. We will be providing quality and affordable food accessible to everyone, as well as fighting the stigma surrounding mental health by bringing awareness and providing access to mental health professionals.</p>
-            <blockquote>- Healing our communities one neighborhood at a time</blockquote>
+        <section id="about">
+            <h2 class="sr-only">About</h2>
+            <section id="aboutUs">
+                <h3>About Us</h3>
+                <p>Your Local Market is a non profit organization that works together with Farmer Markets and NAMI (National Alliance on Mental Illness) to build healthier communities. Our goal is to improve the physical and mental health of every American. We will be providing quality and affordable food accessible to everyone, as well as fighting the stigma surrounding mental health by bringing awareness and providing access to mental health professionals.</p>
+                <blockquote>- Healing our communities one neighborhood at a time</blockquote>
+            </section>
+            <section id="services">
+                <h3>Our Services</h3>
+                <section id="service1" class="currentItem">
+                    <h4>Fresh Food</h4>
+                    <img src="images/fresh-food.jpeg" alt="farmer holding a crate full of fresh vegetables"> 
+                    <!--image credit Jacob Lund - stock.adobe.com-->
+                    <p>We work with every Farmer Market in the country to guarantee access to the best quality of food. We provide farmers with a space to provide for the communities as well as grow their business.</p>
+                </section>
+                <section id="service2" class="hiddenItem">
+                    <h4>Mental Health</h4>
+                    <img src="images/metal-health.jpg" alt="group of volunteers and participants of a NAMI event"> 
+                    <!-- image credit NAMI website https://www.nami.org/wp-content/uploads/2026/02/NAMI-walks-Indy-HP-768x512.jpg -->
+                    <p>We partner with the National Alliance on Mental Illness to install booths on each of our markets. These booths are run by mental health professionals and filled with resources to support the needs of the community.</p>
+                </section>
+                <section id="service3" class="hiddenItem">
+                    <h4>Community Support</h4>
+                    <img src="images/community-support.jpeg" alt="sign that indicates the acceptance of SNAP benefits"> 
+                    <!-- image credit jetcityimage - stock.adobe.com -->
+                    <p>We want to improve the quality of life of every American, which is why every vendor accepts SNAP and EBT benefits.</p>
+                </section>
+                <section id="switcher">
+                    <h4 class="sr-only">Learn more about our services</h4>
+                    <button id="btn1">Fresh Food</button>
+                    <button id="btn2">Mental Health</button>
+                    <button id="btn3">Community Support</button>
+                </section>
+            </section>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <section id="service1" class="currentItem">
-                <h3>Fresh Food</h3>
-                <img src="images/fresh-food.jpeg" alt="farmer holding a crate full of fresh vegetables"> 
-                <!--image credit Jacob Lund - stock.adobe.com-->
-                <p>We work with every Farmer Market in the country to guarantee access to the best quality of food. We provide farmers with a space to provide for the communities as well as grow their business.</p>
-            </section>
-            <section id="service2" class="hiddenItem">
-                <h3>Mental Health</h3>
-                <img src="images/metal-health.jpg" alt="group of volunteers and participants of a NAMI event"> 
-                <!-- image credit NAMI website https://www.nami.org/wp-content/uploads/2026/02/NAMI-walks-Indy-HP-768x512.jpg -->
-                <p>We partner with the National Alliance on Mental Illness to install booths on each of our markets. These booths are run by mental health professionals and filled with resources to support the needs of the community.</p>
-            </section>
-            <section id="service3" class="hiddenItem">
-                <h3>Community Support</h3>
-                <img src="images/community-support.jpeg" alt="sign that indicates the acceptance of SNAP benefits"> 
-                <!-- image credit jetcityimage - stock.adobe.com -->
-                <p>We want to improve the quality of life of every American, which is why every vendor accepts SNAP and EBT benefits.</p>
-            </section>
-            <section id="switcher">
-                <h3 class="sr-only">Learn more about our services</h3>
-			    <button id="btn1">Fresh Food</button>
-			    <button id="btn2">Mental Health</button>
-			    <button id="btn3">Community Support</button>
-            </section>
-        </section>
+        
 
         <section id="events">
             <h2>Upcoming Events</h2>

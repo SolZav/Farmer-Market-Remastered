@@ -160,6 +160,13 @@ h3{
 	padding: 1rem;
 }
 
+h4{
+	font-family: var(--font-header);
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 1rem;
+}
+
 nav ul{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -179,7 +186,12 @@ nav ul li:hover{
 	background-color: var(--green);
 }
 
-#aboutUs{
+#about{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+#aboutUs, #services{
 	padding-top: 3rem;
 	padding-bottom: 2rem;
 }
@@ -212,7 +224,7 @@ button:hover, input[type="submit"]:hover{
 	box-shadow: var(--hover-shadow);
 }
 
-/*Product display styles*/
+/*Product display and sections styles*/
 
 #service1, #service2, #service3, #movieNight{
 	border: var(--green) solid 2px;
