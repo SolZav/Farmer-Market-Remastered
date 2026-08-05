@@ -76,7 +76,7 @@ $(function(){
   //section on the page where we will display movies
   let moviesPlaying = $("#moviesPlaying");
   //create our variables to build our url and add our api key
-  let imgUrl = `https://image.tmdb.org/t/p/w400/`;
+  let imgUrl = `https://image.tmdb.org/t/p/w200/`;
   let urlStart = `https://api.themoviedb.org/3/movie/popular?api_key=`;
 	let apiKey = "782c98385ea0b4e30fe4b6836385e072";
 	let urlEnd = `&language=en-US&page=1`;
@@ -93,16 +93,14 @@ $(function(){
     //iterate through the collection of movies and display the movie poster and information for 3 movies
     for(let i = 0; i < 3; i++){
       html += `
-        <section class="movie subsec">
+        <section class="movieCards">
 					<img src="${imgUrl}${data.results[i].poster_path}" alt="${data.results[i].title}">
 					<button class="details">
 						<span class="arrow"></span>
 					</button>
 					<div>
 						<h4>${data.results[i].title}</h4>
-						<p>${data.results[i].overview}
-							<span class="vote">Vote Average: ${data.results[i].vote_average}</span>
-						</p>
+						<p>${data.results[i].overview}</p>
 					</div>
 				</section>`;
     }
