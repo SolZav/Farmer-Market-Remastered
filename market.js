@@ -166,12 +166,16 @@ document.getElementById("guessGame").addEventListener("click", gamePlay);
 
 //form validation
 //create form validation function
+//following example from module 4 coding activity - web storage, added function that logs name to local storage and welcomes you back
 function validateForm(e) {
   //prevent default form submission
   e.preventDefault();
 
   //access the form
   let myForm = document.querySelector("#contactForm");
+
+  //access place where we will display welcome back message
+  let welcomeMessage = document.getElementById("welcomeBack");
 
   //create an array with all the error messages
   let errorSpans = document.querySelectorAll("#contactForm .message");
@@ -254,26 +258,34 @@ function validateForm(e) {
       isValid = false;
   }
 
-  //if form is valid add information submitted to the object created and display
-  if(isValid){
+  //check to see if fullName is already stored in local storage
+  if(localStorage.getItem("fullName")){
+    welcomeMessage.innerHTML = `Welcome back ${localStorage.getItem("fullName")}! Can't wait to hear more about you!`
+  }else{
+    //if fullName is not save yet and form is valid, save to local storage
+    //if form is valid add information submitted to the object created and display
+    if(isValid){
 
-    //add full name, email, phone number, and message to the object
-    mySubmission.fullName = myForm.fullName.value;
-    mySubmission.phoneNumber = myForm.phoneNumber.value;
-    mySubmission.email = myForm.email.value;
-    mySubmission.myMessage = myForm.myMessage.value;
+      //add full name, email, phone number, and message to the object
+      mySubmission.fullName = myForm.fullName.value;
+      mySubmission.phoneNumber = myForm.phoneNumber.value;
+      mySubmission.email = myForm.email.value;
+      mySubmission.myMessage = myForm.myMessage.value;
 
-    //display object
-    document.getElementById("formSub").innerHTML = `Full name: ${mySubmission.fullName}<br>
-    Phone number: ${mySubmission.phoneNumber}<br>
-    Email: ${mySubmission.email}<br>
-    Message: ${mySubmission.myMessage}`;
-    document.querySelector("#success").classList.remove("hide");
+      //add fullName to local storage
+      localStorage.setItem("fullName", mySubmission.fullName);
+
+      //display object
+      document.getElementById("formSub").innerHTML = `Full name: ${mySubmission.fullName}<br>
+      Phone number: ${mySubmission.phoneNumber}<br>
+      Email: ${mySubmission.email}<br>
+      Message: ${mySubmission.myMessage}`;
+      document.querySelector("#success").classList.remove("hide");
+    }
+
+    //clear form input
+    myForm.reset();
   }
-
-  //clear form input
-  myForm.reset();
-
 }
 
 //add event listener to run the validateForm function
