@@ -39,7 +39,7 @@ Work included:
 - Link jQuery library
 - Added styles to movieNight section
 - Added a Date object to the movieNight object
-- Updated HTML to create empty <p> for a welcome message
+- Updated HTML to create empty paragraph for a welcome message
 - Updated JS to check for an existing fullName in local storage
 - Update JS to log fullName into local storage if non existed
 - Updated CSS to style welcomeBack paragraph
@@ -65,7 +65,7 @@ My console displayed the following error: "Uncaught ReferenceError: $ is not def
 I checked my JS for typos, compared my code to class examples. 
 
 ### What fixed it
-Adding my <scrip> in my HTML to link a jQuery library
+Adding a script tag in my HTML to link a jQuery library
 
 ### What I learned
 That sometimes the error is not coming from the file you are working on. You should always check all of your files to make sure you are not missing something somewhere else.
