@@ -257,6 +257,7 @@ img{
 }
 
 /*movie cards styles*/
+
 #moviesPlaying{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -265,8 +266,15 @@ img{
 
 .movieCards{
 	border: var(--green) solid 2px;
-	border-radius: 8%;
+	border-radius: 12px;
 	padding: 1.5rem;
+}
+
+.movieCards p:first-child{
+	font-family: var(--font-header);
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem;
 }
 
 /*game play section*/

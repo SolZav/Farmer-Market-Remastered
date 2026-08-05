@@ -90,14 +90,16 @@ $(function(){
     //build output onto an empty string
     let html = "";
 
+    //create a date object to indicate the movie date
+    let movieDate = new Date();
+    let formattedDate = movieDate.toDateString();
+
     //iterate through the collection of movies and display the movie poster and information for 3 movies
     for(let i = 0; i < 3; i++){
       html += `
         <section class="movieCards">
+          <p>Next showing: ${formattedDate}</p>
 					<img src="${imgUrl}${data.results[i].poster_path}" alt="${data.results[i].title}">
-					<button class="details">
-						<span class="arrow"></span>
-					</button>
 					<div>
 						<h4>${data.results[i].title}</h4>
 						<p>${data.results[i].overview}</p>
