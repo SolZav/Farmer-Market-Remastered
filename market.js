@@ -68,6 +68,48 @@ btn1.addEventListener('click', () => {
     service1.classList.add("currentItem");
 })
 
+//Ajax/API Section
+//Following some of the code from Module 6 coding activity - jQuery Ajax with third-party API I developed a function to call 3 popular movies from the movie database and display them as the movies to be played at the market
+
+//create function to display movies on page load
+$(function(){
+  //section on the page where we will display movies
+  let moviesPlaying = $("#moviesPlaying");
+  //create our variables to build our url and add our api key
+  let imgUrl = `https://image.tmdb.org/t/p/w400/`;
+  let urlStart = `https://api.themoviedb.org/3/movie/popular?api_key=`;
+	let apiKey = "782c98385ea0b4e30fe4b6836385e072";
+	let urlEnd = `&language=en-US&page=1`;
+
+  //make our ajax call with our url
+  $.ajax({
+    url: `${urlStart}${apiKey}${urlEnd}`,
+    dataType: "json"
+    //handling successful response
+  }).done(function(data){
+    //build output onto an empty string
+    let html = "";
+
+    //iterate through the collection of movies and display the movie poster and information for 3 movies
+    for(let i = 0; i < 3; i++){
+      html += `
+        <section class="movie subsec">
+					<img src="${imgUrl}${data.results[i].poster_path}" alt="${data.results[i].title}">
+					<button class="details">
+						<span class="arrow"></span>
+					</button>
+					<div>
+						<h4>${data.results[i].title}</h4>
+						<p>${data.results[i].overview}
+							<span class="vote">Vote Average: ${data.results[i].vote_average}</span>
+						</p>
+					</div>
+				</section>`;
+    }
+    //add the HTML to the page
+    moviesPlaying.html(html);
+  })
+});
 
 
 //game play
