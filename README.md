@@ -23,12 +23,22 @@ Work included:
 - Continue work on new repository
 
 ### Day 3
-Started working on new repository and planning what sections I would be adding to integrate the new functionalities. First addition was an events section with the idea to include a jQuery widget, and API call, and a slideshow.
+Started working on new repository and planning what sections I would be adding to integrate the new functionalities. First addition was an events section with the idea to include a jQuery widget, and API call, and a slideshow. 
 Work included:
 - Update HTML header with "events" li
 - Update HTML creating an "events" section with basic content
 - Update HTML "events" section adding subsection "movieNight" (API will be called in there)
 - Applied existing styles to section
+
+### Day 4
+Started by moving around some existing section to improve the exiting page and allow for new functionalities to integrate seamlessly. Continued working on events section, updating html, css and js to create an API call.
+Work included: 
+- Combine About Us and Services sections, update HTML and CSS for those sections
+- Update HTML of movieNight subsection
+- Created JS function to make an API call into the movieNight section
+- Link jQuery library
+- Added styles to movieNight section
+- Added a Date object to the movieNight object
 
 ## Debugging Log
 
@@ -43,4 +53,16 @@ I created a new local folder with my new repository name and copied all the exis
 
 ### What I learned
 I learned that you cannot fork your own files in GitHub, and that sometimes it is best to just start over
+
+### Problem 2
+My console displayed the following error "Unsafe attempt to load URL file:///C:/Users/sol_l/OneDrive/SOL/GIT%20(Web%20Development)/GIT%20418/Farmer-Market-Remastered/index.html from frame with URL file:///C:/Users/sol_l/OneDrive/SOL/GIT%20(Web%20Development)/GIT%20418/Farmer-Market-Remastered/index.html. 'file:' URLs are treated as unique security origins."
+
+### What I tried
+I looked up the error in some forums but couldn't find any answers. I reached out to the professor to get some help
+
+### What fixed it
+Not fixed yet
+
+### What I learned
+
 
