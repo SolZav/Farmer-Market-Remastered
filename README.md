@@ -43,6 +43,8 @@ Work included:
 - Updated JS to check for an existing fullName in local storage
 - Update JS to log fullName into local storage if non existed
 - Updated CSS to style welcomeBack paragraph
+- HTML and CSS validated with no errors
+- JS still has error in console (logged as Problem 3)
 
 ## Debugging Log
 
