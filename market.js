@@ -121,7 +121,25 @@ function gamePlay(e){
 //add event listener to run the game play function
 document.getElementById("guessGame").addEventListener("click", gamePlay);
 
+//following the class example, created a carousel feature to display images
+let $slideshow = $(".cycle-slideshow");
 
+$slideshow.on("click", function() {
+   if ($slideshow.is(".cycle-paused"))
+      $slideshow.cycle("resume");                
+   else
+      $slideshow.cycle("pause");
+});
+
+$("#previous-btn").on("click", function() {
+   $slideshow.cycle("stop");
+   $slideshow.cycle("prev");
+});
+
+$("#next-btn").on("click", function() {
+   $slideshow.cycle("stop");
+   $slideshow.cycle("next");
+});
 
 //form validation
 //create form validation function

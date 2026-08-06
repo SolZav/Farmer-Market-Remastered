@@ -13,6 +13,8 @@
   integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
   crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="https://malsup.github.io/jquery.cycle2.carousel.js"></script>
+    
 </head>
 <body>
     <a id="skip" href="#main">Skip to main</a>
@@ -100,6 +102,21 @@
 				    <p id="gameOutput"></p>
 			    </section>
             </div>
+        </section>
+
+        <section id="photoGallery">
+            <div class="cycle-slideshow"
+                data-cycle-fx="fadeout"
+                data-cycle-speed="200"
+                data-cycle-timeout="3000">
+                <img src="images/slideshow-event.jpg" alt="conference room full of people for the NAMICON"> <!--https://www.nami.org/wp-content/uploads/2026/01/Events-NAMICon-Speaker.jpg-->
+                <img src="images/slideshow-farmer-market.jpeg" alt="tents set up at a farmers market with people walking around"> <!--farmers market in the city by Anna - Adobe Stock-->
+                <img src="images/slideshow-market-booth.jpeg" alt="shoppers selecting vegetable from a farmers market's booth"> <!--By DC Studio - Adobe Stock-->
+            </div>
+            <div>
+                <button id="previous-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>        
         </section>
 
         <section id="contactUs">
