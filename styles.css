@@ -264,13 +264,17 @@ img{
 	gap: 1rem;
 }
 
+#movieNight p{
+	padding: 1rem;
+}
+
 .movieCards{
 	border: var(--green) solid 2px;
 	border-radius: 12px;
 	padding: 1.5rem;
 }
 
-.movieCards p:first-child{
+.movieCards p:first-child, .movieCards p + p{
 	font-family: var(--font-header);
 	font-size: 1.2rem;
 	font-weight: bold;
