@@ -47,7 +47,7 @@ Work included:
 - JS still has error in console (logged as Problem 3)
 
 ### Day 5
-Started by fixing styling and error from the day before. Then chose to improve my services section by replacing my vanilla JS with a jQuery UI Widget.
+Started by fixing styling and error from the day before. Then chose to improve my services section by replacing my vanilla JS with a jQuery UI Widget. Also implemented a slideshow/carousel feature using the Cycle2 library and following the class example from the zyBook section 6.3.
 Work included:
 - Downloaded Live Server extension
 - Opened HTML on Live Server (it fixed my load error)
@@ -56,6 +56,9 @@ Work included:
 - Updated HTML following documentation on how to make the tab widget work
 - Updated JS to add Tabs functionality
 - Updated CSS to apply existing styles to the new tab links
+- Updated HTML, added basic syntax for carousel and linked images
+- Updated JS, added the code to make the carousel work
+- Carousel doesn't work, problem logged on debugging log
 
 
 ## Debugging Log
@@ -104,6 +107,18 @@ I went over the documentation again and I noticed that the ul for the tabs neede
 
 ### What fixed it
 After I placed the full section inside a div, both the actual tabs and the ul with the links, that's when it started working
+
 ### What I learned
 That sometimes a quick read to the documentation is not enough, since there are very specific requirements that need to be followed on the HTML to ensure the jQuery loads correctly 
+
+### Problem 5
+When trying to create my slideshow function I get the following error on my console: jquery.cycle2.carousel.js:27 Uncaught TypeError: Cannot read properties of undefined (reading 'transitions')
+
+### What I tried
+I looked at some documentation and tried to find someone with the same issue. I also tried downloading the cycle2 file in other way to see if it would work
+
+### What fixed it
+Problem not fixed yet
+
+### What I learned
 
