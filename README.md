@@ -46,6 +46,18 @@ Work included:
 - HTML and CSS validated with no errors
 - JS still has error in console (logged as Problem 3)
 
+### Day 5
+Started by fixing styling and error from the day before. Then chose to improve my services section by replacing my vanilla JS with a jQuery UI Widget.
+Work included:
+- Downloaded Live Server extension
+- Opened HTML on Live Server (it fixed my load error)
+- Updated CSS on the events section
+- Imported jQuery UI library
+- Updated HTML following documentation on how to make the tab widget work
+- Updated JS to add Tabs functionality
+- Updated CSS to apply existing styles to the new tab links
+
+
 ## Debugging Log
 
 ### Problem 1
@@ -79,8 +91,19 @@ My console displayed the following error "Unsafe attempt to load URL file:///C:/
 I looked up the error in some forums but couldn't find any answers. I reached out to the professor to get some help
 
 ### What fixed it
-Not fixed yet
+Downloading the Live Server extension and running my file using it fixed the problem
 
 ### What I learned
+That opening your HTML directly into the browser from VS can cause a loading error
 
+### Problem 4
+After importing my jQuery UI library, swapping my buttons for li and anchor tags, and adding my JS, my tabs were not working
+
+### What I tried
+I went over the documentation again and I noticed that the ul for the tabs needed to be inside a div, I fixed that but it was still not loading
+
+### What fixed it
+After I placed the full section inside a div, both the actual tabs and the ul with the links, that's when it started working
+### What I learned
+That sometimes a quick read to the documentation is not enough, since there are very specific requirements that need to be followed on the HTML to ensure the jQuery loads correctly 
 
