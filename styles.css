@@ -218,7 +218,22 @@ button, input[type="submit"]{
 	font-size: 1rem;
 }
 
-button:hover, input[type="submit"]:hover{
+#switcher ul{
+	display: flex;
+	justify-content: center;
+}
+
+#switcher a{
+	text-decoration: none;
+	margin: 1rem;
+	padding: 1rem;
+	background-color: var(--green);
+	color: var(--white);
+	box-shadow: var(--box-shadow);
+	font-size: 1rem;
+}
+
+button:hover, input[type="submit"]:hover, #switcher a:hover{
 	background-color: var(--white);
 	color: var(--green);
 	box-shadow: var(--hover-shadow);
@@ -232,28 +247,16 @@ button:hover, input[type="submit"]:hover{
 	padding: 2rem;
 }
 
-.currentItem{
+.ourServices{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 2fr;
 	gap: 2rem;
 }
 
-.hiddenItem{
-	display: none;
-}
-
 img{
 	grid-row: 1/-1;
 	max-width: 400px;
-}
-
-#switcher{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 1rem;
-	width: fit-content;
-	margin: 2rem auto;
 }
 
 /*movie cards styles*/

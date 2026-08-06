@@ -12,6 +12,7 @@
   src="https://code.jquery.com/jquery-4.0.0.min.js"
   integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
 </head>
 <body>
     <a id="skip" href="#main">Skip to main</a>
@@ -43,30 +44,33 @@
             </section>
             <section id="services">
                 <h3>Our Services</h3>
-                <section id="service1" class="currentItem">
-                    <h4>Fresh Food</h4>
-                    <img src="images/fresh-food.jpeg" alt="farmer holding a crate full of fresh vegetables"> 
-                    <!--image credit Jacob Lund - stock.adobe.com-->
-                    <p>We work with every Farmer Market in the country to guarantee access to the best quality of food. We provide farmers with a space to provide for the communities as well as grow their business.</p>
-                </section>
-                <section id="service2" class="hiddenItem">
-                    <h4>Mental Health</h4>
-                    <img src="images/metal-health.jpg" alt="group of volunteers and participants of a NAMI event"> 
-                    <!-- image credit NAMI website https://www.nami.org/wp-content/uploads/2026/02/NAMI-walks-Indy-HP-768x512.jpg -->
-                    <p>We partner with the National Alliance on Mental Illness to install booths on each of our markets. These booths are run by mental health professionals and filled with resources to support the needs of the community.</p>
-                </section>
-                <section id="service3" class="hiddenItem">
-                    <h4>Community Support</h4>
-                    <img src="images/community-support.jpeg" alt="sign that indicates the acceptance of SNAP benefits"> 
-                    <!-- image credit jetcityimage - stock.adobe.com -->
-                    <p>We want to improve the quality of life of every American, which is why every vendor accepts SNAP and EBT benefits.</p>
-                </section>
-                <section id="switcher">
-                    <h4 class="sr-only">Learn more about our services</h4>
-                    <button id="btn1">Fresh Food</button>
-                    <button id="btn2">Mental Health</button>
-                    <button id="btn3">Community Support</button>
-                </section>
+                <div id="tabs">
+                    <section id="service1" class="ourServices">
+                        <h4>Fresh Food</h4>
+                        <img src="images/fresh-food.jpeg" alt="farmer holding a crate full of fresh vegetables"> 
+                        <!--image credit Jacob Lund - stock.adobe.com-->
+                        <p>We work with every Farmer Market in the country to guarantee access to the best quality of food. We provide farmers with a space to provide for the communities as well as grow their business.</p>
+                    </section>
+                    <section id="service2" class="ourServices">
+                        <h4>Mental Health</h4>
+                        <img src="images/metal-health.jpg" alt="group of volunteers and participants of a NAMI event"> 
+                        <!-- image credit NAMI website https://www.nami.org/wp-content/uploads/2026/02/NAMI-walks-Indy-HP-768x512.jpg -->
+                        <p>We partner with the National Alliance on Mental Illness to install booths on each of our markets. These booths are run by mental health professionals and filled with resources to support the needs of the community.</p>
+                    </section>
+                    <section id="service3" class="ourServices"> 
+                        <h4>Community Support</h4>
+                        <img src="images/community-support.jpeg" alt="sign that indicates the acceptance of SNAP benefits"> 
+                        <!-- image credit jetcityimage - stock.adobe.com -->
+                        <p>We want to improve the quality of life of every American, which is why every vendor accepts SNAP and EBT benefits.</p>
+                    </section>
+                    <div id="switcher">
+                        <ul>
+                            <li><a href="#service1">Fresh Food</a></li>
+                            <li><a href="#service2">Mental Health</a></li>
+                            <li><a href="#service3">Community Support</a></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </section>
 
