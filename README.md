@@ -60,6 +60,10 @@ Work included:
 - Updated JS, added the code to make the carousel work
 - Carousel doesn't work, problem logged on debugging log
 
+### Day 6
+Started by trying to fix problem 5, logged on debugging log.
+Work included:
+- Updated HTML with new scripts to fix issues with carousel
 
 ## Debugging Log
 
@@ -115,10 +119,10 @@ That sometimes a quick read to the documentation is not enough, since there are 
 When trying to create my slideshow function I get the following error on my console: jquery.cycle2.carousel.js:27 Uncaught TypeError: Cannot read properties of undefined (reading 'transitions')
 
 ### What I tried
-I looked at some documentation and tried to find someone with the same issue. I also tried downloading the cycle2 file in other way to see if it would work
+I looked at some documentation and tried to find someone with the same issue. I also tried downloading the cycle2 file in other way to see if it would work.
 
 ### What fixed it
-Problem not fixed yet
+Changing my jQuery 4.0 script for the jQuery 3.7.1
 
 ### What I learned
-
+That sometimes older plugins may not be compatible with newer versions of jQuery, and sometime you need to search for an older version to get your code to work
