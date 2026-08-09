@@ -61,9 +61,13 @@ Work included:
 - Carousel doesn't work, problem logged on debugging log
 
 ### Day 6
-Started by trying to fix problem 5, logged on debugging log.
+Started by trying to fix problem 5, logged on debugging log. Then updated HTML and added styles to the carousel and gamePlay sections for better look.
 Work included:
 - Updated HTML with new scripts to fix issues with carousel
+- Updated HTML to group photoGallery and gamePlay sections
+- Updated CSS to style those sections
+- Updated HTML to make the slideshow manual
+- Updated JS to make carousel work with Prev/Next buttons
 
 ## Debugging Log
 
