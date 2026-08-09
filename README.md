@@ -68,6 +68,9 @@ Work included:
 - Updated CSS to style those sections
 - Updated HTML to make the slideshow manual
 - Updated JS to make carousel work with Prev/Next buttons
+- Validated HTML - no errors
+- Validated CSS - no errors
+- Validated JS - no errors in console
 
 ## Debugging Log
 
