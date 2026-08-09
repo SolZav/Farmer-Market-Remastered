@@ -241,7 +241,7 @@ button:hover, input[type="submit"]:hover, #switcher a:hover{
 
 /*Product display and sections styles*/
 
-#service1, #service2, #service3, #movieNight{
+#service1, #service2, #service3, #movieNight, #photoGallery{
 	border: var(--green) solid 2px;
 	margin: 2rem;
 	padding: 2rem;
@@ -284,6 +284,12 @@ img{
 	padding: 1rem;
 }
 
+/*userInteraction section*/
+#userInteraction{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 /*game play section*/
 #gamePlay div{
 	display: grid;
@@ -313,6 +319,12 @@ img{
 	font-weight: bold;
 	font-size: 1rem;
 	padding: 0.5rem;
+}
+
+/*photo gallery section*/
+#gallerySwitcher{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 /*Error messages and span styles*/
