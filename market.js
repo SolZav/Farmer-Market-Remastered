@@ -125,10 +125,12 @@ document.getElementById("guessGame").addEventListener("click", gamePlay);
 //create slideshow 
 let $slideshow = $(".cycle-slideshow");
 
+//created event to listen for a click on prev button
 $("#previous-btn").on("click", function() {
    $slideshow.cycle("prev");
 });
 
+//created event to listen for a click on next button
 $("#next-btn").on("click", function() {   
    $slideshow.cycle("next");
 });
