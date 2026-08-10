@@ -72,6 +72,11 @@ Work included:
 - Validated CSS - no errors
 - Validated JS - no errors in console
 
+### Day 7
+Tested the site to make sure all the functionalities worked and notices the contactUs section wasn't working
+Work included:
+- Updated JS for contactUs section, logged in debugging log
+
 ## Debugging Log
 
 ### Problem 1
@@ -133,3 +138,15 @@ Changing my jQuery 4.0 script for the jQuery 3.7.1
 
 ### What I learned
 That sometimes older plugins may not be compatible with newer versions of jQuery, and sometime you need to search for an older version to get your code to work
+
+### Problem 6
+When doing a final testing of the site I noticed my form wasn't displaying the success message
+
+### What I tried
+I check my JS to see what if my code was correct and noticed that when adding an if statement into the contactUs section I made it so it would only display the message if the first name wasn't loaded into the local storage
+
+### What fixed it
+I removed the message display from inside the else section to make sure it always executed
+
+### What I learned
+I learned that when adding functionalities to an exiting code you always need to test more than once to make sure you didn't introduced a bug
