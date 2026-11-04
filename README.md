@@ -1,3 +1,23 @@
+<img width="223" height="136" alt="Stacked RGB" src="https://github.com/user-attachments/assets/a9709e2a-8cba-403f-9f91-adc4d160fd8b" />
+
+# Farmer Markets are great drivers to improve the community’s physical and mental health
+
+## Objective
+The idea for this project sparked after researching about food deserts and their effects on people’s mental health.
+
+## Synopsis
+After my research regarding food deserts and their effects on people’s mental health, I started thinking about ways to mitigate these issues. After some more research I found an association that provides free mental health support, but I noticed not enough people knew about it. After some thinking, I came up with the idea that Farmer Markets would be the perfect community space to bring awareness and connect more people with this association. Not only that, but these markets are already providing high quality produce and food. Combining healthy food and mental health support would make any community thrive. 
+
+## Process
+This project had two parts, this part was a redesign and improvement of the original one. For starters, I worked on some wireframes for a better layout that would accommodate new functionalities. The HTML and CSS were written from scratch during the previous part of the project. This time around the focus was on improving accessibility as well as simplifying the code using jQuery libraries. I researched the existing libraries and updated the HTML to be compatible with the chosen libraries requirements. A big highlight was using a jQuery widget to transform 42 lines of vanilla JS into 1 single line.  
+
+## Results
+So far the work is only an idea for the future, with a fully functional website that can be used once this idea comes to life. The project can be seen here:
+- [Website](https://solzav.github.io/Farmer-Market-Remastered/)
+- [Behance](https://www.behance.net/gallery/254144533/Farmer-Market-Remastered/modules/1478223135)
+
+
+
 # Farmer-Market-Remastered
 New and improved version of Your-Local-Farmer-Market
 
