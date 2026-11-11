@@ -1,6 +1,6 @@
+<img width="1200" height="400" alt="logo-horizontal" src="https://github.com/user-attachments/assets/7e7da55e-ade2-4a6c-838f-0e1c56aaf379" />
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 250">
-<img width="180" height="150" alt="logo" src="https://github.com/user-attachments/assets/03ab7db8-1274-4ac2-af69-07911670f1eb" />
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200 400">
 
 # Farmer Markets are great drivers to improve the community’s physical and mental health
 
